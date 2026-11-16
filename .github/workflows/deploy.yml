@@ -1,0 +1,49 @@
+name: Deploy static site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Assemble static site
+        run: |
+          mkdir -p _site/images
+          cp -R index.html index1.html lab6 _site/
+          find images -maxdepth 1 -type f -name '*.png' -exec cp -t _site/images/ {} +
+      - name: Check HTML and internal links
+        run: python3 .github/scripts/check-lab6.py _site
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
