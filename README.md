@@ -9,3 +9,8 @@ readme
 При изменениях в ветке `main` GitHub Actions собирает статические файлы,
 проверяет HTML, локальные файлы и якоря путеводителя, затем публикует артефакт
 на GitHub Pages. Для запуска с компьютера достаточно открыть `lab6/index.html`.
+
+[Схемы аудиторий](https://seymondor.github.io/files/lab6/auditoriums.html) ведут на
+официальные планы четырёх учебных корпусов. В
+[build-info.json](https://seymondor.github.io/files/lab6/build-info.json)
+записываются SHA опубликованного коммита и номер запуска GitHub Actions.

@@ -24,6 +24,7 @@ jobs:
           mkdir -p _site/images
           cp -R index.html index1.html lab6 _site/
           find images -maxdepth 1 -type f -name '*.png' -exec cp -t _site/images/ {} +
+          printf '{"commit":"%s","run_id":"%s"}\n' "$GITHUB_SHA" "$GITHUB_RUN_ID" > _site/lab6/build-info.json
       - name: Check HTML and internal links
         run: python3 .github/scripts/check-lab6.py _site
       - name: Upload Pages artifact

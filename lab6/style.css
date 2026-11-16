@@ -182,3 +182,55 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.55rem); line-height: 1.15; }
   .hero, .campus-grid { grid-template-columns: 1fr; }
   .hero-photo img { aspect-ratio: 16 / 10; }
 }
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--green);
+}
+
+.button-secondary:hover { background: #e8ebe2; }
+
+.release-note {
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.floorplans {
+  max-width: 51rem;
+  padding-block: clamp(2.8rem, 6vw, 4.6rem);
+}
+
+.floorplans h1 {
+  max-width: none;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.floorplans .lead { margin-block: 1rem 1.6rem; }
+
+.floorplan-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.floorplan-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.35rem 1.25rem;
+  padding-block: 1.05rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.floorplan-list h2 { font-size: clamp(1.25rem, 3vw, 1.55rem); }
+.floorplan-list a { color: var(--green); font-weight: 650; }
+.floorplan-list a span { margin-inline-start: 0.2em; }
