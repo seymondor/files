@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Максим Машковский. Дневник питания для iOS и интерактивные прототипы мобильных интерфейсов.">
+  <meta name="theme-color" content="#f8f8f5">
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+  <title>Максим Машковский — портфолио iOS</title>
+</head>
+<body>
+  <a class="skip-link" href="#home">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home">
+        <img src="./assets/mark.svg" width="38" height="38" alt=""> <span>Максим Машковский</span>
+      </a>
+      <nav class="site-nav" aria-label="Разделы портфолио">
+        <a href="#home" aria-current="location">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#work">Работы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Портфолио iOS</p>
+        <h1 id="hero-title"><span>Максим</span> <span>Машковский</span></h1>
+        <p class="hero-lead">Проектирую интерфейсы для iOS.</p>
+        <p class="hero-description">Учусь на прикладной информатике и пишу на Swift. Здесь показываю свой дневник питания и три интерактивных прототипа.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Смотреть работы <svg class="button-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5 12 12m0-7v7H5"/></svg></a>
+          <a class="button button-outline" href="#contact">Связаться</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <a class="hero-shot" href="./assets/nutrition.webp" target="_blank" rel="noopener" aria-label="Открыть снимок дневника питания в полном размере">
+          <img src="./assets/nutrition.webp" width="588" height="1188" fetchpriority="high" alt="Снимок дневника питания в симуляторе iOS с дневной нормой калорий и историей записей">
+        </a>
+        <figcaption><strong>Дневник питания</strong><span>Снимок экрана iOS</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="about shell" id="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <h2 id="about-title">Обо мне</h2>
+        <p id="authored-text">Я изучаю прикладную информатику в ГУАП и практикуюсь в разработке для iOS. Когда берусь за новый экран, сначала формулирую, какое действие пользователь должен выполнить и что ему для этого нужно увидеть. Затем собираю интерфейс и проверяю, удобно ли им пользоваться на маленьком дисплее. В учебных проектах использую SwiftUI и UIKit, работаю с REST API и разбираю ответы в формате JSON. В своём дневнике питания я вынес на главный экран дневную цель, текущую сумму калорий и историю записей. В трёх веб-прототипах показал другие сценарии: запуск таймера, ежедневную отметку привычек и выбор маршрута для прогулки.</p>
+      </div>
+      <dl class="skills">
+        <div><dt><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10 5.5h4m-3 13h2"/></svg> Интерфейсы</dt><dd>SwiftUI, UIKit</dd></div>
+        <div><dt><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7 3 12l5 5m8-10 5 5-5 5M14 4l-4 16"/></svg> Язык</dt><dd>Swift</dd></div>
+        <div><dt><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H5v6l-2 2 2 2v6h3m8-16h3v6l2 2-2 2v6h-3m-5-8h2"/></svg> Данные</dt><dd>REST API, JSON</dd></div>
+        <div><dt><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></svg> Инструменты</dt><dd>Xcode, Git</dd></div>
+      </dl>
+    </section>
+
+    <section class="work shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <h2 id="work-title">Избранные работы</h2>
+        <p>Три учебных веб-прототипа. Каждый можно опробовать прямо на странице.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <img class="project-image" src="./assets/focus.svg" width="480" height="320" loading="lazy" alt="Фиолетовый экран «Фокус» с круговым таймером">
+          <div class="project-copy">
+            <span class="project-category">Продуктивность</span>
+            <h3>Фокус</h3>
+            <p>Таймер для 25 минут работы с возможностью поставить сессию на паузу.</p>
+            <button class="project-open" type="button" data-open="focus" aria-label="Открыть прототип «Фокус»">Открыть прототип <svg class="button-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12 12 3.5m-7 0h7v7"/></svg></button>
+          </div>
+        </article>
+        <article class="project">
+          <img class="project-image" src="./assets/rhythm.svg" width="480" height="320" loading="lazy" alt="Экран «Ритм» со списком привычек и счётчиком">
+          <div class="project-copy">
+            <span class="project-category">Привычки</span>
+            <h3>Ритм</h3>
+            <p>Список привычек на день и счётчик, который обновляется при каждой отметке.</p>
+            <button class="project-open" type="button" data-open="rhythm" aria-label="Открыть прототип «Ритм»">Открыть прототип <svg class="button-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12 12 3.5m-7 0h7v7"/></svg></button>
+          </div>
+        </article>
+        <article class="project">
+          <img class="project-image" src="./assets/route.svg" width="480" height="320" loading="lazy" alt="Схема маршрута «По пути» с началом и концом прогулки">
+          <div class="project-copy">
+            <span class="project-category">Прогулки</span>
+            <h3>По пути</h3>
+            <p>Подборка прогулочных маршрутов в Петербурге с фильтром по длительности.</p>
+            <button class="project-open" type="button" data-open="route" aria-label="Открыть прототип «По пути»">Открыть прототип <svg class="button-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12 12 3.5m-7 0h7v7"/></svg></button>
+          </div>
+        </article>
+      </div>
+      <noscript><p>Для запуска прототипов включите JavaScript в браузере.</p></noscript>
+    </section>
+
+    <section class="contact shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <h2 id="contact-title">Связаться</h2>
+          <p>Поделитесь отзывом о прототипах или предложите идею для учебного проекта.</p>
+          <div class="contact-note">
+            <svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <span>После проверки данных можно открыть черновик письма в почтовом приложении.</span>
+          </div>
+        </div>
+        <form class="contact-form" id="feedback" method="post" aria-label="Форма обратной связи">
+          <div class="field">
+            <label for="sender-name">Имя</label>
+            <input id="sender-name" name="name" autocomplete="name" placeholder="Как к вам обращаться" maxlength="80" aria-describedby="error-name" required>
+            <p class="field-error" id="error-name" hidden></p>
+          </div>
+          <div class="field">
+            <label for="sender-email">Email</label>
+            <input id="sender-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" maxlength="160" aria-describedby="error-email" required>
+            <p class="field-error" id="error-email" hidden></p>
+          </div>
+          <div class="field field-wide">
+            <label for="sender-message">Сообщение</label>
+            <textarea id="sender-message" name="message" rows="4" placeholder="Напишите ваше сообщение" maxlength="700" aria-describedby="error-message" required></textarea>
+            <p class="field-error" id="error-message" hidden></p>
+          </div>
+          <button class="button button-primary" type="submit">Подготовить письмо <svg class="button-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 12 12 3.5m-7 0h7v7"/></svg></button>
+          <p class="form-status" id="form-status" role="status"></p>
+          <div class="draft-actions" id="draft-actions" hidden>
+            <a class="button button-outline" id="open-draft">Открыть в почте</a>
+          </div>
+          <noscript><p>Включите JavaScript для проверки полей или воспользуйтесь адресом в подвале.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p class="copyright">© 2026 Максим Машковский</p>
+      <div class="footer-contacts" aria-label="Прямые контакты">
+        <a id="contact-email" href="mailto:maxm22@bk.ru">maxm22@bk.ru</a>
+        <a href="tel:+79242009473">+7 (924) 200-94-73</a>
+      </div>
+      <div class="footer-social" aria-label="Поделиться портфолио">
+        <a class="social-link" data-share="telegram" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Поделиться в Telegram" title="Поделиться в Telegram">
+          <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path fill="currentColor" d="M20.73 4.47a.82.82 0 0 0-.84-.12L3.57 10.63c-.8.31-.81.82-.14 1.02l4.2 1.31L17.37 6.8c.46-.28.88-.13.53.17l-7.9 7.14-.3 4.25c.44 0 .64-.2.89-.44l2.1-2.01 4.38 3.24c.8.44 1.36.21 1.55-.73l2.75-12.98a.8.8 0 0 0-.64-.97Z"/></svg>
+        </a>
+        <a class="social-link" data-share="vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer" aria-label="Поделиться во ВКонтакте" title="Поделиться во ВКонтакте">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M13.3 17.7c-6.23 0-9.78-4.12-9.93-10.97h3.1c.1 5.02 2.37 7.15 4.17 7.59V6.73h2.91v4.33c1.78-.19 3.67-2.17 4.3-4.33h2.91a8.4 8.4 0 0 1-3.95 5.45c1.31.62 3.45 2.27 4.3 5.52h-3.2c-.72-2.11-2.44-3.75-4.36-3.97v3.97z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <form method="dialog" class="dialog-close">
+        <button class="icon-button" type="submit" aria-label="Закрыть прототип" autofocus>×</button>
+      </form>
+      <p class="eyebrow">Интерактивный прототип</p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-summary" id="dialog-summary"></p>
+      <div id="dialog-demo"></div>
+    </div>
+  </dialog>
+
+  <template id="focus-template">
+    <div class="demo demo-focus">
+      <p class="timer-time" aria-label="Оставшееся время">25:00</p>
+      <div class="demo-actions">
+        <button class="button button-primary" type="button" data-timer="toggle">Старт</button>
+        <button class="button button-outline" type="button" data-timer="reset">Сбросить</button>
+      </div>
+      <p class="demo-status" role="status">Готов к началу</p>
+    </div>
+  </template>
+  <template id="rhythm-template">
+    <fieldset class="demo demo-rhythm">
+      <legend>Привычки на сегодня</legend>
+      <p class="habit-count" role="status">Выполнено 0 из 3</p>
+      <label><input type="checkbox"> Сделать разминку</label>
+      <label><input type="checkbox"> Почитать 15 минут</label>
+      <label><input type="checkbox"> Выйти на прогулку</label>
+    </fieldset>
+  </template>
+  <template id="route-template">
+    <div class="demo demo-route">
+      <label for="route-time">Сколько времени есть на прогулку</label>
+      <select id="route-time">
+        <option value="all">Любая длительность</option>
+        <option value="30">До 30 минут</option>
+        <option value="60">До 60 минут</option>
+      </select>
+      <ul class="routes">
+        <li data-minutes="25"><strong>Набережная Фонтанки</strong><span>25 мин</span></li>
+        <li data-minutes="45"><strong>Летний сад и Марсово поле</strong><span>45 мин</span></li>
+        <li data-minutes="75"><strong>Петроградская сторона</strong><span>75 мин</span></li>
+      </ul>
+      <p class="visually-hidden route-count" role="status">Доступно маршрутов: 3</p>
+    </div>
+  </template>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f7dfad"/><stop offset="1" stop-color="#efd09f"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="160%"><feDropShadow dx="0" dy="11" stdDeviation="13" flood-color="#81531e" flood-opacity=".2"/></filter>
+    <pattern id="lines" width="19" height="19" patternUnits="userSpaceOnUse"><path d="M19 0H0v19" fill="none" stroke="#a36e29" stroke-opacity=".11"/></pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h480v320H0z"/><path fill="url(#lines)" d="M0 0h480v320H0z"/>
+  <circle cx="360" cy="82" r="100" fill="#fff2cc" opacity=".58"/><circle cx="95" cy="242" r="108" fill="#e8bd81" opacity=".5"/>
+  <g transform="translate(112 41) rotate(6 128 118)" font-family="system-ui,sans-serif" filter="url(#shadow)">
+    <rect width="256" height="238" rx="24" fill="#fff9ed" stroke="#fff"/>
+    <text x="23" y="39" fill="#352418" font-size="25" font-weight="760">Ритм</text>
+    <text x="23" y="60" fill="#786052" font-size="12">2 из 3 привычек</text>
+    <rect x="23" y="72" width="210" height="7" rx="3.5" fill="#f0ddbe"/><rect x="23" y="72" width="140" height="7" rx="3.5" fill="#c05b38"/>
+    <g font-size="12" font-weight="680" fill="#3e2d23">
+      <rect x="23" y="96" width="210" height="35" rx="9" fill="#f6e5cd"/><circle cx="41" cy="113.5" r="8" fill="#c05b38"/>
+      <path d="m37.5 113.5 2.4 2.5 4.7-5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      <text x="58" y="117.5">Сделать разминку</text>
+      <rect x="23" y="139" width="210" height="35" rx="9" fill="#f6e5cd"/><circle cx="41" cy="156.5" r="8" fill="#c05b38"/>
+      <path d="m37.5 156.5 2.4 2.5 4.7-5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      <text x="58" y="160.5">Почитать 15 минут</text>
+      <rect x="23" y="182" width="210" height="35" rx="9" fill="#fbefdd"/><circle cx="41" cy="199.5" r="7.2" fill="none" stroke="#b0835c" stroke-width="1.5"/>
+      <text x="58" y="203.5">Выйти на прогулку</text>
+    </g>
+  </g>
+</svg>

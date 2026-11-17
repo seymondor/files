@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#d9eee2"/><stop offset="1" stop-color="#add5be"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#274d40" flood-opacity=".22"/></filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h480v320H0z"/>
+  <path d="M-20 214c76-79 100-92 149-84 55 9 84 37 143 18 57-18 69-71 101-102 35-34 89-47 140-54" fill="none" stroke="#8fc9bd" stroke-width="35"/>
+  <path d="M-20 214c76-79 100-92 149-84 55 9 84 37 143 18 57-18 69-71 101-102 35-34 89-47 140-54" fill="none" stroke="#b6ded4" stroke-width="24"/>
+  <g stroke="#f7fcf7" fill="none" stroke-width="3.3" opacity=".85">
+    <path d="m0 37 98 48 82-85m-66 0L48 124 0 143m0 119 175-73 102 131m-181 0 42-106m94 106 163-196 85 45m0 53-111-64m43 27 38-63 30-16m-39 117-66 97m-15-156 7-61m-101 30L195 0"/>
+  </g>
+  <g transform="translate(93 39)" font-family="system-ui,sans-serif" filter="url(#shadow)">
+    <rect width="294" height="242" rx="23" fill="#fcfdf8" stroke="#fff"/>
+    <text x="21" y="39" fill="#17382d" font-size="24" font-weight="750">По пути</text>
+    <rect x="20" y="54" width="254" height="117" rx="12" fill="#e7f0e2"/>
+    <path d="M32 144c35-32 62-50 96-32 27 15 49 12 67-3 26-20 30-43 67-45" fill="none" stroke="#b0d9d3" stroke-width="11" stroke-linecap="round"/>
+    <path d="m33 99 71-28 51 88m-44-84 54-10m-94 94 121-46 65 34m-18 13 2-79m-63 73 22-79" fill="none" stroke="#fff" stroke-width="2.4" opacity=".93"/>
+    <path d="m67 120 46-23 33 22 33-30 47-9" fill="none" stroke="#247858" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="67" cy="120" r="6" fill="#fcfdf8" stroke="#247858" stroke-width="3"/><circle cx="226" cy="80" r="7.5" fill="#247858" stroke="#fcfdf8" stroke-width="2"/>
+    <text x="21" y="197" fill="#17382d" font-size="14" font-weight="720">Набережная Фонтанки</text>
+    <text x="21" y="216" fill="#456558" font-size="11">Пешком · 25 мин</text>
+    <path d="m244 200 5 5 8-9" fill="none" stroke="#247858" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520">
+  <defs>
+    <radialGradient id="bg" cx="60%" cy="49%" r="75%"><stop stop-color="#6b55b8"/><stop offset=".58" stop-color="#332661"/><stop offset="1" stop-color="#16102c"/></radialGradient>
+    <linearGradient id="orbit" x2="1" y2="1"><stop stop-color="#c8b6ff" stop-opacity=".1"/><stop offset=".57" stop-color="#cfbaff" stop-opacity=".55"/><stop offset="1" stop-color="#c8b6ff" stop-opacity=".1"/></linearGradient>
+    <pattern id="grid" width="27" height="27" patternUnits="userSpaceOnUse"><path d="M27 0H0v27" fill="none" stroke="#b79dff" stroke-opacity=".16"/></pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h600v520H0z"/>
+  <path fill="url(#grid)" d="M0 0h600v520H0z"/>
+  <g fill="none" stroke="url(#orbit)" transform="rotate(-23 312 236)">
+    <ellipse cx="312" cy="236" rx="326" ry="145"/><ellipse cx="312" cy="236" rx="309" ry="126"/>
+    <ellipse cx="312" cy="236" rx="285" ry="107"/><ellipse cx="312" cy="236" rx="251" ry="88"/>
+  </g>
+  <g fill="#d9c8ff" opacity=".85">
+    <circle cx="527" cy="122" r="3.5"/><circle cx="110" cy="325" r="2.6"/><circle cx="473" cy="365" r="2"/>
+    <circle cx="54" cy="219" r="2"/><circle cx="161" cy="114" r="2"/><circle cx="520" cy="407" r="2.1"/>
+  </g>
+  <g stroke="#e5d8ff" stroke-linecap="round" fill="none" opacity=".65">
+    <path d="M485 72v16m-8-8h16"/><path d="M111 395v12m-6-6h12"/><path d="M537 260v10m-5-5h10"/>
+  </g>
+</svg>
